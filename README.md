@@ -1,11 +1,15 @@
 # Churn prediction coursework
 
+Customer churn modeling with scikit-learn: baseline streaming subscription data and advanced Telco benchmark.
+
 Two related assignments: baseline streaming-style churn modeling, then comparative models on Telco churn data.
+
+Repository: [markrtak/customer-churn-scikit-learn-baseline-and-telco-comparison](https://github.com/markrtak/customer-churn-scikit-learn-baseline-and-telco-comparison)
 
 ## Layout
 
 | Folder | Scripts / data |
-|--------|------------------|
+|--------|----------------|
 | `sprint1_baseline/` | `m1_baseline_model.py`, `stream_pulse_customer_data.csv` — scikit-learn pipeline + grid search + `joblib` exports. |
 | `sprint3_advanced/` | `m2_advanced_classification.py`, `WA_Fn-UseC_-Telco-Customer-Churn.csv` — multiple models, tuned logistic regression, confusion matrix figure. |
 
