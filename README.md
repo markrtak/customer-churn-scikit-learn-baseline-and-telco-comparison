@@ -1,17 +1,21 @@
-# Churn prediction coursework
+# Customer churn prediction
 
-Customer churn modeling with scikit-learn: baseline streaming subscription data and advanced Telco benchmark.
+Baseline subscription churn modeling alongside a Telco benchmark with logistic regression and related classifiers—grid search for pipeline tuning, model comparison on holdout metrics, and confusion-matrix reporting.
 
-Two related assignments: baseline streaming-style churn modeling, then comparative models on Telco churn data.
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=py,pandas,numpy,sklearn,matplotlib,seaborn" height="48" alt="Python, Pandas, NumPy, scikit-learn, Matplotlib, Seaborn" />
+</p>
+
+[![Joblib](https://img.shields.io/badge/Joblib-EF8C06?style=flat&logo=python&logoColor=white&labelColor=333)](https://joblib.readthedocs.io)
 
 Repository: [markrtak/customer-churn-scikit-learn-baseline-and-telco-comparison](https://github.com/markrtak/customer-churn-scikit-learn-baseline-and-telco-comparison)
 
 ## Layout
 
-| Folder | Scripts / data |
-|--------|----------------|
-| `sprint1_baseline/` | `m1_baseline_model.py`, `stream_pulse_customer_data.csv` — scikit-learn pipeline + grid search + `joblib` exports. |
-| `sprint3_advanced/` | `m2_advanced_classification.py`, `WA_Fn-UseC_-Telco-Customer-Churn.csv` — multiple models, tuned logistic regression, confusion matrix figure. |
+| Folder | Contents |
+|--------|----------|
+| `baseline_subscription/` | `m1_baseline_model.py`, `stream_pulse_customer_data.csv` — preprocessing pipeline + `GridSearchCV` + `joblib` exports |
+| `telco_benchmark/` | `m2_advanced_classification.py`, `WA_Fn-UseC_-Telco-Customer-Churn.csv` — model comparison + tuned logistic regression + confusion matrix figure |
 
 Telco dataset: [Telco Customer Churn – Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn).
 
@@ -23,24 +27,24 @@ pip install pandas numpy scikit-learn matplotlib seaborn joblib
 
 ## Usage
 
-Always `cd` into the sprint folder that contains both the script and its CSV before running.
+Run each workflow from its own directory (alongside its CSV).
 
-### Sprint 1 — baseline
+### Baseline (subscription churn)
 
 ```bash
-cd sprint1_baseline
+cd baseline_subscription
 python m1_baseline_model.py
 ```
 
-Produces `baseline_model.pkl` and `preprocessing_pipeline.pkl` in that folder (ignored by `.gitignore` unless you force-add).
+Writes `baseline_model.pkl` and `preprocessing_pipeline.pkl` there (these are `.gitignored` unless you publish artifacts intentionally).
 
-### Sprint 3 — advanced
+### Telco benchmark
 
 ```bash
-cd sprint3_advanced
+cd telco_benchmark
 python m2_advanced_classification.py
 ```
 
-Produces `optimized_churn_model.pkl` and `confusion_matrix.png` in that folder (also gitignored).
+Writes `optimized_churn_model.pkl` and `confusion_matrix.png` there (also `.gitignored`).
 
-Sprints use different schemas and CSVs on purpose — they are independent runs, not a shared training pipeline.
+The two tracks use **different schemas and CSVs**; treat them as separate experiments, not a single shared training pipeline.
