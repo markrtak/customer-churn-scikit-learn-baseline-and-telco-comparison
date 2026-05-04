@@ -2,11 +2,7 @@
 
 Baseline subscription churn modeling alongside a Telco benchmark with logistic regression and related classifiers—grid search for pipeline tuning, model comparison on holdout metrics, and confusion-matrix reporting.
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=py,pandas,numpy,sklearn,matplotlib,seaborn" height="48" alt="Python, Pandas, NumPy, scikit-learn, Matplotlib, Seaborn" />
-</p>
-
-[![Joblib](https://img.shields.io/badge/Joblib-EF8C06?style=flat&logo=python&logoColor=white&labelColor=333)](https://joblib.readthedocs.io)
+<p><img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/><img src="https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/><img src="https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/><img src="https://img.shields.io/badge/SCIKITLEARN-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn"/><img src="https://img.shields.io/badge/MATPLOTLIB-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib"/><img src="https://img.shields.io/badge/SEABORN-9C554A?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn"/><img src="https://img.shields.io/badge/JOBLIB-EF8C06?style=for-the-badge" alt="Joblib"/></p>
 
 Repository: [markrtak/customer-churn-scikit-learn-baseline-and-telco-comparison](https://github.com/markrtak/customer-churn-scikit-learn-baseline-and-telco-comparison)
 
